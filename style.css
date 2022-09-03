@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 2.5rem 7%;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .left {
+  display: flex;
+  gap: 3rem;
+}
+
+#header .left ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#header .left ul a {
+  text-decoration: none;
+  color: hsl(260, 4%, 55%);
+}
+
+#header .left ul li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#header .right {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+#header .right a {
+  text-decoration: none;
+  color: hsl(260, 4%, 55%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#header .right button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: 1px solid hsl(180, 66%, 49%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#header .right button:hover,
+#home .left button:hover,
+.shorten button:hover,
+#boost button:hover {
+  background-color: hsl(180, 67%, 70%);
+  border: 1px solid hsl(180, 67%, 70%);
+}
+
+#home {
+  display: flex;
+  gap: 3rem;
+}
+
+#home .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .left h1 {
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 1.1;
+  padding-bottom: 20px;
+  color: rgb(34, 33, 33);
+}
+
+#home .left p {
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(257, 7%, 63%);
+  padding-bottom: 50px;
+}
+
+#home .left button {
+  width: 22%;
+  padding: 12px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: 1px solid hsl(180, 66%, 49%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#home .right {
+  width: 100%;
+}
+
+#home .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#home2 {
+  padding-bottom: 100px;
+}
+.shorten {
+  padding: 2.5rem 7%;
+  display: flex;
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  gap: 4rem;
+  margin-bottom: 30px;
+}
+
+.shorten .input-link {
+  flex: 10 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.shorten .input-link small {
+  display: none;
+  padding-top: 7px;
+  font-size: 18px;
+  color: hsl(0, 80%, 52%);
+}
+
+.shorten input {
+  padding: 15px 20px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.shorten button {
+  flex: 2 2;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: 1px solid hsl(180, 66%, 49%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.shorten-link-div {
+  display: none;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgb(211, 197, 197);
+  padding: 1.5rem 30px;
+  border-radius: 10px;
+}
+
+.shorten-link-div .link {
+  display: flex;
+  flex: 10 10;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.shorten-link-div .button {
+  flex: 1 1;
+}
+
+.shorten-link-div .button button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: 1px solid hsl(180, 66%, 49%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.shorten-link-div .button button.copied {
+  background-color: hsl(260, 8%, 14%);
+  border: 1px solid hsl(260, 8%, 14%);
+}
+
+#statistics {
+  background-color: hsl(0, 23%, 92%);
+  padding-bottom: 100px;
+}
+
+#statistics h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#statistics .desc {
+  text-align: center;
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+  line-height: 1.4;
+  padding-bottom: 40px;
+}
+
+.statistics {
+  padding-top: 50px;
+  display: flex;
+  gap: 3rem;
+}
+
+.brand-recognition,
+.detailed-records,
+.fully-custimizable {
+  flex: 1 1;
+  background-color: #fff;
+  padding: 35px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  text-align: start;
+  position: relative;
+  border-radius: 7px;
+}
+
+.brand-recognition .image,
+.detailed-records img,
+.fully-custimizable .image {
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  background-color: hsl(260, 8%, 14%);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.brand-recognition img,
+.fully-custimizable img {
+  height: 32px;
+  width: 35px;
+  object-fit: cover;
+}
+
+.brand-recognition h3,
+.detailed-records h3,
+.fully-custimizable h3 {
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.brand-recognition p,
+.detailed-records p,
+.fully-custimizable p {
+  color: hsl(258, 4%, 56%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#boost {
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 7%;
+}
+
+#boost h1 {
+  text-align: center;
+  font-size: 50px;
+  color: hsl(0, 13%, 89%);
+  word-spacing: 3px;
+  padding-bottom: 25px;
+}
+
+#boost button {
+  width: 15%;
+  padding: 15px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: 1px solid hsl(180, 66%, 49%);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#footer {
+  background-color: hsl(260, 8%, 14%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  gap: 3rem;
+}
+
+#footer .logo {
+  flex: 2.5 2.5;
+}
+
+#footer .logo h1 {
+  color: hsl(0, 14%, 93%);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#footer .features {
+  flex: 1 1;
+}
+
+#footer .resources {
+  flex: 1 1;
+}
+#footer .company {
+  flex: 1 1;
+}
+
+#footer .features h3,
+#footer .resources h3,
+#footer .company h3 {
+  color: hsl(0, 14%, 93%);
+  padding-bottom: 15px;
+}
+
+#footer .features ul li,
+#footer .resources ul li,
+#footer .company ul li {
+  list-style: none;
+  color: hsl(257, 7%, 63%);
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+#footer .features ul li:hover,
+#footer .resources ul li:hover,
+#footer .company ul li:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+#footer .social-media {
+  flex: 2 2;
+  text-align: center;
+  padding: 15px;
+}
+
+#footer .social-media i {
+  margin-right: 20px;
+  cursor: pointer;
+  color: hsl(0, 14%, 93%);
+  font-size: 25px;
+}
+
+#footer .social-media i:hover {
+  background-color: hsl(180, 66%, 49%);
+  color: hsl(260, 8%, 14%);
+}
